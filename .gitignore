@@ -2,3 +2,4 @@
 .idea
 virtualenv
 local_files.db
+celery.db
