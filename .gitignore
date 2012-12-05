@@ -3,3 +3,4 @@
 virtualenv
 local_files.db
 celery.db
+test.db
