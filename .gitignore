@@ -1,3 +1,4 @@
 *.pyc
 .idea
 virtualenv
+local_files.db
