@@ -7,7 +7,7 @@ def home():
 @app.route('/run-task-to-get-files')
 def run_task_to_get_files():
     tasks.get_local_files.apply_async()
-    return 'task added'
+    return 'task added<br/><a href="/api/v1/files">view all files via api</a>'
 
 
 

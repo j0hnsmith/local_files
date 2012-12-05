@@ -37,3 +37,6 @@ class File(db.Model):
     @property
     def full_path(self):
         return os.path.join(self.dir_path, self.name)
+
+    def as_dict(self):
+        return {col.name: getattr(self, col.name) for col in self.__table__.columns}
